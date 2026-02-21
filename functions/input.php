@@ -6,3 +6,11 @@ function saisir (string $message):string{
 };
 $resultat = saisir("entrer votre message: ");
 echo "vous aviez saisi $resultat \n";
+
+function saisirInt($nombre):int{
+    $n = readline($nombre);
+    $n = trim($n);
+    return $n;
+}
+$r = saisirInt("entrer votre message: ");
+echo "vous aviez saisi $r \n";
