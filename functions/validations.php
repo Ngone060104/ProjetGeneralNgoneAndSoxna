@@ -27,3 +27,22 @@ function validerTelephone(string $tel):bool{
             }
 $tel = saisir("entrez votre numero de telephone: ");
 validerTelephone($tel);
+
+function validerDate(string $date): bool{
+    $dateSaisie = strtotime($date);
+    $aujourdhui = strtotime(date("d-m-Y"));
+    if ($dateSaisie >= $aujourdhui) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+$date = saisir("entrez votre date de naissance : ");
+$a= validerDate($date);
+if ($a == true) {
+    echo "votre date de naissance $date est exacte \n";
+}
+else {
+    echo "votre date de naissance $date est incorrecte \n";
+}
