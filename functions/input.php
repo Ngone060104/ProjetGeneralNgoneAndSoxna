@@ -5,5 +5,4 @@ function saisir (string $message):string{
     return $valeur;
 };
 $resultat = saisir("entrer votre message: ");
-echo "vous aviez saisi $resultat";
-
+echo "vous aviez saisi $resultat \n";
