@@ -6,3 +6,4 @@ function saisir (string $message):string{
 };
 $resultat = saisir("entrer votre message: ");
 echo "vous aviez saisi $resultat";
+
